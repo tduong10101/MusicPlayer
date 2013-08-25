@@ -20,7 +20,7 @@ public class ClockUi extends JFrame {
 	public ClockUi(){
 		this.setSize(400, 300);
 		newLabel.setText("00:00");
-		newLabel.setFont(new Font(newLabel.getName(),Font.PLAIN,150));
+		newLabel.setFont(new Font("Tahoma",Font.PLAIN,150));
 		restart.setText("Start");
 		
 		restart.addActionListener(new ActionListener(){
@@ -38,7 +38,6 @@ public class ClockUi extends JFrame {
 				restart.setText("Restart");
 				main.remove(1);
 				main.add(tc.getTimeLabel(),BorderLayout.CENTER);
-				
 			}
 			
 		});
